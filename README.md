@@ -1,69 +1,41 @@
-#🎯 Number Guessing Game
+# 🎯 Number Guessing Game
 
 A beginner-friendly Python command-line game where the player tries to guess a randomly generated number between 1 and 100.
 
-This project demonstrates fundamental Python programming concepts such as variables, data types, conditionals, loops, functions, lists, input validation, and the random module.
+This project demonstrates fundamental Python programming concepts such as variables, data types, conditionals, loops, functions, lists, input validation, and the `random` module.
 
-✨ Features
+## ✨ Features
 
-🎲 Random secret number between 1 and 100
+- 🎲 Random secret number between 1 and 100
+- 🔢 Maximum of 7 attempts per round
+- 💡 Hints when a guess is too high or too low
+- 🚫 Prevents duplicate guesses
+- ✅ Validates user input
+- 📋 Displays previous guesses
+- 🔄 Allows the player to play multiple rounds
+- 💻 Runs completely from the command line
 
-🔢 Maximum of 7 attempts per round
+## 📚 Python Concepts Demonstrated
 
-💡 Hints when a guess is too high or too low
+- Variables and data types (`int`, `str`, `bool`, `list`)
+- String formatting and f-strings
+- `if`, `elif`, and `else`
+- `while` loops
+- `for` loops
+- Functions
+- Function parameters and return values
+- Lists and list methods
+- User input and validation
+- Built-in `random` module
 
-🚫 Prevents duplicate guesses
+## 📁 Project Structure
 
-✅ Validates user input
-
-📋 Displays previous guesses
-
-🔄 Allows the player to play multiple rounds
-
-💻 Runs completely from the command line
-
-📚 Python Concepts Demonstrated
-
-This project demonstrates:
-
-Variables and data types
-
-int
-
-str
-
-bool
-
-list
-
-String formatting and f-strings
-
-if, elif, and else
-
-while loops
-
-for loops
-
-Functions
-
-Function parameters and return values
-
-Lists and list methods
-
-User input and validation
-
-The built-in random module
-
-📁 Project Structure
+```text
 number-guessing-game/
 │
 ├── README.md
 └── number_guessing_game.py
-
 ⚙️ Requirements
-
-You only need:
-
 Python 3.8 or newer
 
 A terminal or command prompt
@@ -71,26 +43,18 @@ A terminal or command prompt
 No external libraries or packages are required.
 
 🚀 Installation and Setup
-1. Clone the repository
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+1. Clone the Repository
+git clone https://github.com/YOUR-USERNAME/number-guessing-game.git
 
+2. Open the Project Directory
+cd number-guessing-game
 
-Replace YOUR-USERNAME and YOUR-REPOSITORY with your GitHub username and repository name.
-
-2. Open the project directory
-cd YOUR-REPOSITORY
-
-3. Check your Python installation
-
-Run:
-
+3. Check Python Installation
 python --version
 
-
-If your system uses python3, run:
+If your system uses python3:
 
 python3 --version
-
 
 Make sure Python 3.8 or newer is installed.
 
@@ -101,35 +65,24 @@ python number_guessing_game.py
 macOS / Linux
 python3 number_guessing_game.py
 
-
-The game will start directly in your terminal.
-
 🎮 How to Play
-
 The game generates a secret number between 1 and 100.
 
 You have 7 attempts to guess the number.
 
 Enter your guess when prompted.
 
-The game tells you whether your guess is:
-
-Too high
-
-Too low
-
-Correct
+The game tells you whether your guess is too high or too low.
 
 Previously entered guesses cannot be used again.
 
-If you guess correctly, you win the round.
+Guess the number correctly to win.
 
 If you use all 7 attempts, the secret number is revealed.
 
 You can choose to play another round.
 
 🛡️ Input Validation
-
 The game checks that your input:
 
 Is a positive whole number
@@ -138,8 +91,7 @@ Is between 1 and 100
 
 Has not already been guessed
 
-For example:
-
+Example
 Enter your guess (1-100): hello
 Invalid input! Please enter a positive whole number.
 
@@ -183,37 +135,22 @@ Would you like to play again? (yes/no): no
 Thanks for playing! Have a great day!
 
 🔧 Functions
-
-The program is organized into four main functions:
-
 show_welcome()
-
-Displays the game title and instructions.
+Displays the game title and basic instructions.
 
 get_player_guess(previous_guesses)
-
-Gets and validates the player's guess. It ensures that the input is valid, within the correct range, and has not already been entered.
+Gets and validates the player's guess. It checks that the input is valid, within the range of 1 to 100, and has not already been guessed.
 
 play_round()
-
 Controls one complete round of the game, including generating the secret number, processing guesses, providing hints, and determining whether the player wins.
 
 main()
-
-Controls the overall program and allows the player to start additional rounds.
+Controls the overall program and allows the player to play multiple rounds.
 
 📦 Dependencies
-
 No third-party dependencies are required.
 
-The project uses only Python's built-in:
+The project uses Python's built-in random module:
 
 import random
 
-📝 Educational Purpose
-
-This project was created as a beginner Python programming exercise to demonstrate basic programming concepts in a simple and interactive way.
-
-📄 License
-
-This project is intended for educational purposes.
