@@ -1,8 +1,8 @@
 # 🎯 Number Guessing Game
 
-A beginner-friendly Python command-line game where the player tries to guess a randomly generated number between 1 and 100.
+Python-based game for beginners where the user attempts to guess a number that is randomly chosen by the computer within a range of 1 and 100.
 
-This project demonstrates fundamental Python programming concepts such as variables, data types, conditionals, loops, functions, lists, input validation, and the `random` module.
+This project illustrates some basic Python programming techniques including variables, data types, conditional statements, loops, functions, list, input validation, and the random module.
 
 ## ✨ Features
 
@@ -15,9 +15,9 @@ This project demonstrates fundamental Python programming concepts such as variab
 - 🔄 Allows the player to play multiple rounds
 - 💻 Runs completely from the command line
 
-## 📚 Python Concepts Demonstrated
+## 📚 Python Concepts
 
-- Variables and data types (`int`, `str`, `bool`, `list`)
+- Variables and data types
 - String formatting and f-strings
 - `if`, `elif`, and `else`
 - `while` loops
@@ -35,73 +35,42 @@ number-guessing-game/
 │
 ├── README.md
 └── number_guessing_game.py
-⚙️ Requirements
-Python 3.8 or newer
+```
 
-A terminal or command prompt
+## ⚙️ Requirements
 
-No external libraries or packages are required.
+- Python 3
+- A terminal
+- No external libraries or packages are required.
 
-🚀 Installation and Setup
-1. Clone the Repository
-git clone https://github.com/YOUR-USERNAME/number-guessing-game.git
+## 🚀 Installation and Setup
 
-2. Open the Project Directory
-cd number-guessing-game
+### 1. Download the Project
 
-3. Check Python Installation
+Download the project files and extract the ZIP folder to your computer.
+
+### 2. Check Python Installation
+
+Open **Terminal** and run:
+
+```bash
 python --version
+```
+If your system uses `Python 3`, run:
 
-If your system uses python3:
-
+```bash
 python3 --version
+```
+Make sure Python 3 or newer.
 
-Make sure Python 3.8 or newer is installed.
-
-▶️ Running the Game
-Windows
+## ▶️ Running the Game
+```bash
 python number_guessing_game.py
+```
+🎮 The game will start in the terminal.
 
-macOS / Linux
-python3 number_guessing_game.py
-
-🎮 How to Play
-The game generates a secret number between 1 and 100.
-
-You have 7 attempts to guess the number.
-
-Enter your guess when prompted.
-
-The game tells you whether your guess is too high or too low.
-
-Previously entered guesses cannot be used again.
-
-Guess the number correctly to win.
-
-If you use all 7 attempts, the secret number is revealed.
-
-You can choose to play another round.
-
-🛡️ Input Validation
-The game checks that your input:
-
-Is a positive whole number
-
-Is between 1 and 100
-
-Has not already been guessed
-
-Example
-Enter your guess (1-100): hello
-Invalid input! Please enter a positive whole number.
-
-Enter your guess (1-100): 150
-Out of range! Please enter a number from 1 to 100.
-
-Enter your guess (1-100): 50
-You already guessed 50! Try a different number.
-
-🖥️ Example Gameplay
+## 📤Example output
+```text
 =============================================
       Welcome to the Number Guessing Game!
 =============================================
@@ -133,24 +102,21 @@ It took you 3 attempt(s).
 Would you like to play again? (yes/no): no
 
 Thanks for playing! Have a great day!
+```
 
-🔧 Functions
-show_welcome()
-Displays the game title and basic instructions.
+## 📦 Dependencies
+- No external module are required.
+- The project uses Python inbuild random module:
 
-get_player_guess(previous_guesses)
-Gets and validates the player's guess. It checks that the input is valid, within the range of 1 to 100, and has not already been guessed.
-
-play_round()
-Controls one complete round of the game, including generating the secret number, processing guesses, providing hints, and determining whether the player wins.
-
-main()
-Controls the overall program and allows the player to play multiple rounds.
-
-📦 Dependencies
-No third-party dependencies are required.
-
-The project uses Python's built-in random module:
-
-import random
-
+## 🧠 Concepts Used
+- Variables
+- Strings and Formatting
+- Conditional Statements
+- While Loops
+- For Loops
+- Lists
+- Functions
+- Random Module
+- Input Validation
+- Duplicate Input Handling
+- Boolean
